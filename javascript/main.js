@@ -1,9 +1,13 @@
-/*
-animazione bg
-*/
-
+/* animazione bg */
 var canvas = document.getElementById('canvas');
 var flr = Math.floor;
+
+var cursor = document.getElementById("cursor");                   /* cursore bianco */
+document.body.addEventListener("mousemove", function(e) {
+  cursor.style.left = e.clientX + "px",
+    cursor.style.top = e.clientY + "px";
+});
+
 
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
@@ -72,7 +76,6 @@ var star = function() {
             this.reset();
         }
     };
-    
 }
 
 var starfield = function() {
@@ -104,7 +107,7 @@ var mStarField = new starfield();
 
 function draw() {
     
-    // make 5 seconds
+    // 5 sec 
     var millSeconds = 1000 * 10;
     
     var currentTime = new Date();
