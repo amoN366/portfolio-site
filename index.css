@@ -20,7 +20,7 @@ body{
   white;
     height: 20px;
     width: 20px;
-    transition: all 10ms ease-out;
+    transition: all 1ms ease-in;
 }
 .logo{
     width: 17%;
@@ -40,67 +40,132 @@ h3{
     font-size: 100%;
     color: white;
 }
-nav{
+#am{                                           /* menù destra*/ 
     position: absolute;
-    top: 35%;
-    left: 94%;
-    display: flex;
-    justify-content: space-between;
-}
-nav ul li{
-    list-style: none;
-    display: list-item;
-    margin-top: 90%;
-}
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    color: 0;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 80%;
-}
-#yt{
-    position: absolute;
-    top: 95%;
-    right: 95%;
+    top: 45%;
+    left: 95%;
     padding: 0, 15px 0;
+    transition: transform.2s;
     display: inline-flex;
-    align-items: center;
     justify-content: space-between;
-    list-style: none;
     margin-left:0;
     text-decoration: none;
     color: white;
     font-family: 'Maven Pro', sans-serif;
     font-size: 80%;
+}
+#am:hover{
+    transform: scale(1.2);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 255, 247),
+    0 0 82px rgb(0, 255, 247),
+    0 0 92px rgb(0, 255, 247),
+    0 0 102px rgb(0, 255, 247),
+    0 0 151px rgb(0, 255, 247);
+}
+#dw{
+    position: absolute;
+    top: 55%;
+    left: 95%;
+    padding: 0, 15px 0;
+    transition: transform.2s;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left:0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 80%;
+}
+#dw:hover{
+    transform: scale(1.2);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 255, 247),
+    0 0 82px rgb(0, 255, 247),
+    0 0 92px rgb(0, 255, 247),
+    0 0 102px rgb(0, 255, 247),
+    0 0 151px rgb(0, 255, 247);
+}
+#sh{
+    position: absolute;
+    top: 65%;
+    left: 95%;
+    padding: 0, 15px 0;
+    transition: transform.2s;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left:0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 80%;
+}
+#sh:hover{
+    transform: scale(1.2);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 255, 247),
+    0 0 82px rgb(0, 255, 247),
+    0 0 92px rgb(0, 255, 247),
+    0 0 102px rgb(0, 255, 247),
+    0 0 151px rgb(0, 255, 247);
+}
+#yt{                                                 /* menù basso*/ 
+    position: absolute;
+    top: 97%;
+    right: 95%;
+    padding: 0, 15px 0;
+    transition: transform.2s;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left:0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 60%;
+}
+#yt:hover{
+    transform: scale(1.1);
 }
 #ig{
     position: absolute;
-    top: 95%;
+    top: 97%;
     right: 87%;
+    transition: transform.2s;
     display: inline-flex;
-    align-items: center;
     justify-content: space-between;
-    list-style: none;
     margin-left:0;
     text-decoration: none;
     color: white;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 80%;
+    font-size: 60%;
+}
+#ig:hover{
+    transform: scale(1.1);
 }
 #st{
     position: absolute;
-    top: 95%;
+    top: 97%;
     right: 79%;
+    transition: transform.2s;
     display: inline-flex;
-    align-items: center;
     justify-content: space-between;
-    list-style: none;
     margin-left:0;
     text-decoration: none;
     color: white;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 80%;
+    font-size: 60%;
+}
+#st:hover{
+    transform: scale(1.1);
 }
 canvas{
     position: absolute;
