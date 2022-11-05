@@ -29,7 +29,7 @@ function rnd(num1, num2) {
 }
 
 function getColor() {
-    return 'hsla(20,1000%,100%, 1)';
+    return 'rgb(204, 243, 255)';                      /* per il colore rgb o hsla(20,1000%,100%,1)*/
 }
 
 var star = function() {

@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 *{                  /* css rule per il cursore*/         
     cursor: none;
@@ -42,12 +43,13 @@ h3{
 }
 #am{                                           /* menù destra*/ 
     position: absolute;
-    top: 45%;
-    left: 95%;
+    top: 95%;
+    left: 48%;
     padding: 0, 15px 0;
     transition: transform.2s;
     display: inline-flex;
     justify-content: space-between;
+    text-align: center;
     margin-left:0;
     text-decoration: none;
     color: white;
@@ -167,6 +169,12 @@ h3{
 #st:hover{
     transform: scale(1.1);
 }
+.slider{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+} 
 canvas{
     position: absolute;
     width: 100%;
