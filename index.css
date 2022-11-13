@@ -33,11 +33,21 @@ body{
 }
 h3{
     position: absolute;
-    top: 11%;
+    top: 12%;
     left: 2%;
     text-align: center;
     justify-content: center;
     font-family: 'Maven Pro', sans-serif;
+    font-size: 110%;
+    color: white;
+}
+h4{
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    text-align: left;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
     font-size: 100%;
     color: white;
 }
@@ -80,7 +90,7 @@ h3{
     text-decoration: none;
     color: white;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 80%;
+    font-size: 90%;
 }
 #dw:hover{
     transform: scale(1.2);
@@ -97,16 +107,17 @@ h3{
 #sh{
     position: absolute;
     top: 65%;
-    left: 95%;
+    left: 90%;
     padding: 0, 15px 0;
     transition: transform.2s;
     display: inline-flex;
-    justify-content: space-between;
+    text-align: right;
+    justify-content: left;
     margin-left:0;
     text-decoration: none;
     color: white;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 80%;
+    font-size: 90%;
 }
 #sh:hover{
     transform: scale(1.2);
