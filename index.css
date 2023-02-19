@@ -83,11 +83,10 @@ h4{
     0 0 102px rgb(0, 255, 247),
     0 0 151px rgb(0, 255, 247);
 }
-
 #gu{                                           /* menù destra*/ 
     position: absolute;
-    top: 105%;
-    left: 48.6%;
+    top: 95%;
+    left: 48%;
     padding: 0, 15px 0;
     transition: transform.2s;
     display: inline-flex;

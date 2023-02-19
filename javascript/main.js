@@ -2,13 +2,6 @@
 var canvas = document.getElementById('canvas');
 var flr = Math.floor;
 
-var cursor = document.getElementById("cursor");                   /* cursore bianco */
-document.body.addEventListener("mousemove", function(e) {
-  cursor.style.left = e.clientX + "px",
-    cursor.style.top = e.clientY + "px";
-});
-
-
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
