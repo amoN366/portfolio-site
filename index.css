@@ -36,79 +36,15 @@ body{
     top: 7%;
     left: 2%;
 }
-h3{
-    position: absolute;
-    top: 12%;
-    left: 2%;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 110%;
-    color: white;
-}
 h4{
     position: absolute;
     top: 18%;
     left: 2%;
     text-align: left;
     justify-content: center;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     font-size: 100%;
     color: white;
-}
-#am{                                           /* menù destra*/ 
-    position: absolute;
-    top: 95%;
-    left: 48%;
-    padding: 0, 15px 0;
-    transition: transform.2s;
-    display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-left:0;
-    text-decoration: none;
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 80%;
-}
-#am:hover{
-    transform: scale(1.2);
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px rgb(0, 255, 247),
-    0 0 82px rgb(0, 255, 247),
-    0 0 92px rgb(0, 255, 247),
-    0 0 102px rgb(0, 255, 247),
-    0 0 151px rgb(0, 255, 247);
-}
-#gu{                                           /* menù destra*/ 
-    position: absolute;
-    top: 95%;
-    left: 48%;
-    padding: 0, 15px 0;
-    transition: transform.2s;
-    display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-left:0;
-    text-decoration: none;
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 80%;
-}
-#gu:hover{
-    transform: scale(1.2);
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px rgb(0, 255, 247),
-    0 0 82px rgb(0, 255, 247),
-    0 0 92px rgb(0, 255, 247),
-    0 0 102px rgb(0, 255, 247),
-    0 0 151px rgb(0, 255, 247);
 }
 #dw{
     position: absolute;
@@ -208,6 +144,60 @@ h4{
     color: white;
     font-family: 'Maven Pro', sans-serif;
     font-size: 60%;
+}
+#am{                                           /* vai sotto*/ 
+    position: absolute;
+    top: 95%;
+    left: 48%;
+    padding: 0, 15px 0;
+    transition: transform.2s;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left:0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 80%;
+}
+#am:hover{
+    transform: scale(1.2);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 255, 247),
+    0 0 82px rgb(0, 255, 247),
+    0 0 92px rgb(0, 255, 247),
+    0 0 102px rgb(0, 255, 247),
+    0 0 151px rgb(0, 255, 247);
+}
+#gu{                                                 /*vai sopra*/       
+    position: absolute;
+    top: 2%;
+    left: 48%;
+    padding: 0, 15px 0;
+    transition: transform.2s;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left:0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 80%;
+}
+#gu:hover{
+    transform: scale(1.2);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 255, 247),
+    0 0 82px rgb(0, 255, 247),
+    0 0 92px rgb(0, 255, 247),
+    0 0 102px rgb(0, 255, 247),
+    0 0 151px rgb(0, 255, 247);
 }
 #st:hover{
     transform: scale(1.1);

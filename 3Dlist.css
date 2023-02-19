@@ -1,8 +1,58 @@
-body{
-    padding: 0;
-    margin: 0;
-    overflow:   scroll;
+.body {
+  background-color: #000000;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  place-content: center;
+  align-items: center;
 }
+.cursor{
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  mix-blend-mode: difference;
+  background-color: 
+white;
+  z-index: 10000;
+  border: 2px solid 
+white;
+  height: 20px;
+  width: 20px;
+  transition: all 1ms ease-in;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.gradient {
+  --size: 100%;
+  --speed: 20s;
+  --easing: cubic-bezier(0.8, 0.8, 0.8, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsla(221, 100%, 16%, 0.823),rgb(75, 0, 156));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+@media (min-width: 100rem) {
+  .gradient {
+    --size: 30rem;
+  }
+}
+/* This is just to transition when you change the viewport size. */
+* {
+  transition: all 0.25s ease-out;
+}
+
 ::-webkit-scrollbar {
       width: 0px;
       background: transparent; /* scrollbar trasparente */
@@ -10,29 +60,111 @@ body{
 *{                  /* css rule per il cursore*/         
     cursor: none;
 }
-.cursor{
-    position: fixed;
-    border-radius: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    pointer-events: none;
-    left: -100px;
-    top: 50%;
-    mix-blend-mode: difference;
-    background-color: 
-  white;
-    z-index: 10000;
-    border: 2px solid 
-  white;
-    height: 20px;
-    width: 20px;
-    transition: all 1ms ease-in;
+
+/* TEBELLA FENDER */
+.card-fender {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #8d8d8d00;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 0.25rem;
+  top: -30%;
+  left: -40%;
 }
-canvas{
-    position: absolute;
-    background-color: rgb(37, 37, 37);
-    width: 100%;
-    height: 110%;
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.75rem - 1px);
+  border-top-right-radius: calc(0.75rem - 1px);
+  border-bottom-left-radius: calc(0.75rem - 1px);
+  border-bottom-right-radius: calc(0.75rem - 1px);
 }
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0.25rem;
+}
+.card-title {
+  font-family: 'Maven Pro', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 0rem;
+  margin-bottom: 0.45rem;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #ffffff00;
+  border-color: #ffffff00;
+}
+.btn {
+  font-family: 'Maven Pro', sans-serif;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.100rem 2.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.btn:hover{
+  transform: scale(1.1);
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px rgb(0, 255, 247),
+  0 0 82px rgb(0, 255, 247),
+  0 0 92px rgb(0, 255, 247),
+  0 0 102px rgb(0, 255, 247),
+  0 0 151px rgb(0, 255, 247);
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/* TEBELLA LANCIA */
+.card-lancia {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #8d8d8d00;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 0.25rem;
+  top: -30%;
+  left: -35%;
+}
+
+
+
 
 
  
