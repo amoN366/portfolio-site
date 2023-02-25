@@ -2,6 +2,8 @@
 var canvas = document.getElementById('canvas');
 var flr = Math.floor;
 
+document.getElementById("canvas").style.filter = "blur(3px)";
+
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
@@ -22,7 +24,7 @@ function rnd(num1, num2) {
 }
 
 function getColor() {
-    return 'rgb(204, 243, 255)';                      /* per il colore rgb o hsla(20,1000%,100%,1)*/
+    return 'rgb(255, 255, 255)';                      /* per il colore rgb o hsla(20,1000%,100%,1)*/
 }
 
 var star = function() {
@@ -56,8 +58,8 @@ var star = function() {
         v = vec3.add(vec3.create(), v, vel);
         var x = v[0] / v[2];
         var y = v[1] / v[2];
-        var x2 = v[0] / (v[2] + speed * 1.50);
-        var y2 = v[1] / (v[2] + speed * 1.50);
+        var x2 = v[0] / (v[2] + speed * 1.0);
+        var y2 = v[1] / (v[2] + speed * 1.0);
         
         ctx.strokeStyle = this.color;
         ctx.beginPath();
@@ -108,7 +110,7 @@ function draw() {
     speed = 0.025;
   
     ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.fillStyle = 'rgba(0,0,0,0.1)';
+    ctx.fillStyle = 'rgba(21,21,21,0.1)';
     ctx.fillRect(0,0, canvas.width, canvas.height);
     
     mStarField.draw();
