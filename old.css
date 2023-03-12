@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(21, 21, 21);
+    background-color: rgb(251, 245, 245);
     overflow:   scroll;
 }
 
@@ -207,9 +207,16 @@ h4{
 .slider{
     position: absolute;
     width: 100%;
-    top: 110%;
-    left: 0%;
+    top:100%;
+    left: auto;
 } 
+/*.slider{
+    position: absolute;
+    width: 40%;
+    top:30%;
+    left: auto;
+    margin-left: 29%;
+} */
 canvas{
     position: absolute;
     width: 100%;
