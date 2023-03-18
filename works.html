@@ -1,60 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>works</title>
+	<title>Works</title>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="works.css" />
+	<link rel="stylesheet" type="text/css" href="works.css">
+  <script src="javascript/cursor.js" defer></script>
 </head>
 <body>
-  <div class="sfondo"></div>
+  <canvas id="canvas"></canvas>
+  <div class='cursor' id="cursor"></div>
   <a href="index.html" target="" id="self">
     <img src="img/AMON.STDIO LOGO 2.png" class="logo"/>
   </a>
-  <div class="pagina">
-    <div class="menu">
-        <div class="grid">
-          <div class="item">
-            <a href="3Dviewer/fender stratocaster/index.html" target="_blank" id="self">
-              <img src="img/FENEDER STRATOCASTER 2.png" alt="">
-            </a>
-            <div class="caption">Fender Stratocaster</div>
-          </div>
-          <div class="item">
-            <img src="img/prova.png" alt="">
-            <div class="caption">Writing 2</div>
-          </div>
-          <div class="item">
-            <img src="img/prova.png" alt="">
-            <div class="caption">Writing 3</div>
-          </div>
-          <div class="item">
-            <img src="img/prova.png" alt="">
-            <div class="caption">Writing 4</div>
-          </div>
-          <div class="item">
-            <img src="img/prova.png" alt="">
-            <div class="caption">Writing 5</div>
-          </div>
-          <div class="item">
-            <img src="img/prova.png" alt="">
-            <div class="caption">Writing 6</div>
-          </div>
-          <div class="item">
-            <img src="img/prova.png" alt="">
-            <div class="caption">Writing 7</div>
-          </div>
-          <div class="item">
-            <img src="img/prova.png" alt="">
-            <div class="caption">Writing 8</div>
-          </div>
-          <div class="item">
-            <img src="img/prova.png" alt="">
-            <div class="caption">Writing 9</div>
-          </div>
-        </div>
-      </div>
-  </div> 
+  <div class="barra">
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">LINKS</a></li>
+        </ul>
+    </nav>
+</div>
+	<div class="container">
+		<div class="image-container">
+			<div class="image-item">
+        <a href="index3D.html" target="_blank">
+				  <img src="img/model visualizer.png" alt="Image 1">
+				  <div class="label">MODELS VISUALIZER <BR> blender, quixel, unity, substance, photoshop </div>
+        </a>
+			</div>
+			<div class="image-item">
+        <a href="render.html" target="_blank">
+				  <img src="img/render and animation.png" alt="Image 2">
+				  <div class="label">RENDER AND ANIMATIONS <BR> blender, quixel, photoshop, premiere </div>
+        </a>
+			</div>
+			<div class="image-item">
+				<img src="img/varius.png" alt="Image 3">
+				<div class="label">VARIUS</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
