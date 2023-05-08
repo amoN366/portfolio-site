@@ -38,11 +38,15 @@ body{
     margin-top: 1%;
     margin-left: 2%;
 }
+.navdrop{
+    position: absolute;
+    left: -2em;
+}
 nav {
     position: absolute;
     background-color: #00000000;
     overflow: hidden;
-    left: 32rem;
+    left: 52.1em;
 }
 nav ul {
     list-style: none;
@@ -86,7 +90,7 @@ nav a:hover {
 }
 .dropdown {
     padding-top: 1.1rem;
-    left: 52.2rem;
+    left: 65em;
     position: relative;
     display: inline-block;
     transition: all 0.2s ease-in-out;

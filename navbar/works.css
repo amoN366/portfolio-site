@@ -1,26 +1,32 @@
-body {
-	background-color: #000;
-	margin: 0;
-	padding: 0;
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+ /* scrollbar trasparente */
 }
 *{
-  /* css rule per il cursore*/
-   cursor: none;
+ /* css rule per il cursore*/
+  cursor: none;
 }
 .cursor{
-   position: fixed;
-   border-radius: 50%;
-   transform: translateX(-50%) translateY(-50%);
-   pointer-events: none;
-   left: -100px;
-   top: 50%;
-   mix-blend-mode: difference;
-   background-color: white;
-   z-index: 10000;
-   border: 2px solid white;
-   height: 20px;
-   width: 20px;
-   transition: all 1ms ease-in;
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  mix-blend-mode: difference;
+  background-color: white;
+  z-index: 10000;
+  border: 2px solid white;
+  height: 20px;
+  width: 20px;
+  transition: all 1ms ease-in;
 }
 .logo{
   width: 5%;
@@ -32,15 +38,19 @@ body {
   margin-top: 1%;
   margin-left: 2%;
 }
+.navdrop{
+  position: absolute;
+  left: -2em;
+}
 nav {
   position: absolute;
   background-color: #00000000;
   overflow: hidden;
-  left: 32rem;
+  left: 52.6em;
 }
 nav ul {
   list-style: none;
-  margin: 0;
+  margin-top: .1em;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -63,6 +73,55 @@ nav a {
 nav a:hover {
   transform: scale(1.1);
   color: #fff;
+}
+/* Dropdown */
+.dropbtn {
+  background-color: #ffffff00;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  padding: 1rem;
+  font-size: 85%;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.dropdown :hover{
+  transform: scale(1.1);
+  color: #fff;
+}
+.dropdown {
+  padding-top: 1.1rem;
+  left: 65em;
+  position: relative;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00000000;
+  min-width: 160px;
+  z-index: 1;
+}
+/* Link del dropdown*/
+.dropdown-content a {
+  font-family: 'Barlow', sans-serif;
+  font-size: 80%;
+  color: rgb(255, 255, 255);
+  padding: 0.2rem 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+.dropdown-content a:hover {
+ background-color: #ffffff00;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  transform: scale(1.1);
+  color: #fff;
+}
+.dropdown:hover .dropbtn {
+ background-color: #ffffff00;
 }
 .container {
 	max-width: 1200px;
