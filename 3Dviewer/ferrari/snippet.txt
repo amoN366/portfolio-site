@@ -1,1 +1,0 @@
-<model-viewer src="scene ferrari gto.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.83" environment-image="aircraft_workshop_01_1k.hdr" exposure="1.17" shadow-softness="0.85" camera-orbit="40.97deg 80.69deg 4.127m" field-of-view="26.71deg" auto-rotate> </model-viewer>
