@@ -1,25 +1,34 @@
 :not(:defined) > * {
   display: none;
 }
-
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  background-color: rgb(221, 221, 221);
 }
-
-model-viewer {
-  width: 100%;
-  height: 100%;
+iframe {
+  position: fixed;
+  left: auto;
+  top: auto;
+  width: 100vw;
+  height: 100vh;
 }
-
-img{
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.presentazione {
+  position: fixed;
+  width: 25%;
+  top: 25%; 
+  height: 45vh; 
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(231, 231, 231, 0.074); 
+  padding: 20px;
+}
+.testo-presentazione {
+  color: rgb(255, 255, 255);
+  font-size: calc(1vw + 0.4vh); 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  overflow: hidden; 
 }

@@ -123,9 +123,26 @@ body{
   .dropdown:hover .dropbtn {
    background-color: #ffffff00;
   }
-  
-  canvas{
+
+  .carousel {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    top: 13vh;
+    left: 35vw;
+    height: auto;
+    width: 30vw;
+    overflow: overlay;
   }
+.carousel-inner {
+  display:list-item;
+}
+.carousel-image {
+  padding-top: 2%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
